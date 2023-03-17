@@ -4,17 +4,17 @@ $(async function () {
 });
 const table = $('#allUserTable');
 
-function SortArray(x, y){
-    return x.localeCompare(y);
-}
-
-function stringRoles (user) {
-    let arRole = [];
-    user.roles.forEach(role =>{
-        arRole.push(role.name.replace("ROLE_",""));
-    })
-    return arRole.sort(SortArray).join(" ");
-}
+// function SortArray(x, y){
+//     return x.localeCompare(y);
+// }
+//
+// function stringRoles (user) {
+//     let arRole = [];
+//     user.roles.forEach(role =>{
+//         arRole.push(role.name.replace("ROLE_",""));
+//     })
+//     return arRole.sort(SortArray).join(" ");
+// }
 
 async function adminAllUsers() {
     table.empty()
